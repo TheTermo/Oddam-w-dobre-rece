@@ -1,6 +1,6 @@
 # Projekt "Oddam w dobre ręcę"
 
-aaa
+test
 
 ## Funkcje
 
