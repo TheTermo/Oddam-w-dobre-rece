@@ -1,6 +1,6 @@
 # Projekt "Oddam w dobre ręcę"
 
-test
+Portfolio Lab
 
 ## Funkcje
 
@@ -13,5 +13,4 @@ test
 Projekt został zbudowany przy użyciu następujących technologii:
 
 - React
-- Material UI
 - SASS
