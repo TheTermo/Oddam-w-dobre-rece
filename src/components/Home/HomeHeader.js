@@ -1,15 +1,11 @@
 import React from 'react';
-import { Grid, Typography, Button } from '@mui/material';
 import '../Home/HomeHeaderStyles.scss'; 
+import Navbar from './Navbar';
 
-const HomeHeader = ({}) => {
+const HomeHeader = () => {
 return (
-    <Grid >
-        <Typography>
-            <Button/>
-        </Typography>
-    </Grid>
+    <Navbar/>
   );
 };
 
-export default (HomeHeader);
+export default HomeHeader;
