@@ -8,7 +8,6 @@ const App = () => {
         <Route path="/" exact>
           <Home />
         </Route>
-        {/* kolejne ścieżki */}
       </Switch>
     </Router>
   );
