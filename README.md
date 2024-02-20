@@ -1,12 +1,12 @@
-# Projekt "Oddam w dobre ręcę"
+# "Oddam w dobre ręcę"
 
-Portfolio Lab
+Ćwiczeniowy projekt PortfolioLAB
 
 ## Funkcje
 
-- 
-- 
-- 
+- Rejestracja
+- Logowanie/Wylogowanie
+- Formularz 
 
 ## Technologie
 
