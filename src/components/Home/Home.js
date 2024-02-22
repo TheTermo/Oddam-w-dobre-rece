@@ -1,10 +1,10 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
-import HomeThreeColumns from "./HomeThreeColumns"
+import HomeThreeColumns from "./HomeThreeColumns";
 import SimpleSteps from "./SimpleSteps";
 import { Link } from "react-router-dom";
 import decoration_img from "../../assets/Decoration.svg";
-import "../../scss/_home.scss";
+import "../../scss/_Home.scss";
 
 const Home = () => {
   return (
@@ -32,8 +32,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <HomeThreeColumns/>
-      <SimpleSteps/>
+      <HomeThreeColumns />
+      <SimpleSteps />
     </div>
   );
 };

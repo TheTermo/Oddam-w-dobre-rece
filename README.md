@@ -2,7 +2,7 @@
 
 Ćwiczeniowy projekt PortfolioLAB
 
-https://oddam-w-dobre-rynce.netlify.app/
+https://oddam-w-dobre-rynce.netlify.app
 
 ## Funkcje
 
