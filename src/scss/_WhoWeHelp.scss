@@ -65,6 +65,10 @@
         color: $color-font;
         list-style: none;
 
+        &:last-child {
+          border-bottom: none;
+        }
+
         li {
           font-size: 26px;
           font-weight: 300;
