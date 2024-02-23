@@ -2,6 +2,7 @@ import React from "react";
 import HomeHeader from "./HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
 import SimpleSteps from "./SimpleSteps";
+import About from "./About";
 import { Link } from "react-router-dom";
 import decoration_img from "../../assets/Decoration.svg";
 import "../../scss/_Home.scss";
@@ -34,6 +35,7 @@ const Home = () => {
       </section>
       <HomeThreeColumns />
       <SimpleSteps />
+      <About/>
     </div>
   );
 };
