@@ -65,44 +65,48 @@ const WhoWeHelp = () => {
       entriesPerPage: 3,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-        data: [
-            {
-              name: "Organizacja “Lorem Ipsum 1”",
-              items: ["ubrania", "jedzenie", "sprzęt AGD", "meble", "zabawki"],
-              mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-            },
-            {
-              name: "Organizacja “Lorem Ipsum 2”",
-              items: ["ubrania", "meble", "zabawki"],
-              mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-            },
-            {
-              name: "Organizacja “Lorem Ipsum 3”",
-              items: ["ubrania", "jedzenie", "ciepłe koce"],
-              mission: "Scelerisque in dictum non consectetur a erat nam.",
-            },
-            {
-              name: "Organizacja “Lorem Ipsum 3”",
-              items: ["ubrania", "jedzenie", "ciepłe koce"],
-              mission: "Scelerisque in dictum non consectetur a erat nam.",
-            },
-            {
-              name: "Organizacja “Lorem Ipsum 2”",
-              items: ["ubrania", "meble", "zabawki"],
-              mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-            },
-            {
-              name: "Organizacja “Lorem Ipsum 1”",
-              items: ["ubrania", "jedzenie", "sprzęt AGD", "meble", "zabawki"],
-              mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-            },
-          ],
+      data: [
+        {
+          name: "Organizacja “Lorem Ipsum 1”",
+          items: ["ubrania", "jedzenie", "sprzęt AGD", "meble", "zabawki"],
+          mission:
+            "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+        },
+        {
+          name: "Organizacja “Lorem Ipsum 2”",
+          items: ["ubrania", "meble", "zabawki"],
+          mission:
+            "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+        },
+        {
+          name: "Organizacja “Lorem Ipsum 3”",
+          items: ["ubrania", "jedzenie", "ciepłe koce"],
+          mission: "Scelerisque in dictum non consectetur a erat nam.",
+        },
+        {
+          name: "Organizacja “Lorem Ipsum 3”",
+          items: ["ubrania", "jedzenie", "ciepłe koce"],
+          mission: "Scelerisque in dictum non consectetur a erat nam.",
+        },
+        {
+          name: "Organizacja “Lorem Ipsum 2”",
+          items: ["ubrania", "meble", "zabawki"],
+          mission:
+            "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+        },
+        {
+          name: "Organizacja “Lorem Ipsum 1”",
+          items: ["ubrania", "jedzenie", "sprzęt AGD", "meble", "zabawki"],
+          mission:
+            "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+        },
+      ],
     },
     lokalneZbiorki: {
       pages: 1,
       entriesPerPage: 3,
       description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
       data: [
         {
           name: "Fundacja “Dbam o Zdrowie”",
@@ -143,7 +147,9 @@ const WhoWeHelp = () => {
     <button
       key={index}
       onClick={() => handlePageChange(index + 1)}
-      className={currentPage === index + 1 ? 'active-pagination' : 'button-pagination'}
+      className={
+        currentPage === index + 1 ? "active-pagination" : "button-pagination"
+      }
     >
       {index + 1}
     </button>
@@ -193,15 +199,13 @@ const WhoWeHelp = () => {
             <div className="helpers-list" key={index}>
               <div>
                 <li>{fundacja.name}</li>
-                <p>Cel i misja: {fundacja.items.join(", ")}</p>
+                <p>Cel i misja: {fundacja.mission}</p>
               </div>
-              <p>{fundacja.mission}</p>
+              <p>{fundacja.items.join(", ")}</p>
             </div>
           ))}
         </ul>
-        <div className="pagination">
-          {paginationButtons}
-        </div>
+        <div className="pagination">{paginationButtons}</div>
       </div>
     </section>
   );
