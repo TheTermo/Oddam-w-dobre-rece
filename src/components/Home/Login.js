@@ -25,12 +25,12 @@ const Login = () => {
     if (name === 'email' && !/\S+@\S+\.\S+/.test(value)) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: 'Niepoprawny adres email',
+        email: 'Podany adres email jest nieprawidłowy',
       }));
     } else if (name === 'password' && value.length < 6) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        password: 'Hasło musi mieć co najmniej 6 znaków',
+        password: 'Podane hasło jest za krótkie',
       }));
     } else {
       setErrors((prevErrors) => ({
