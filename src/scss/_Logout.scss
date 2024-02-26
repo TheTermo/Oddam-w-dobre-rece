@@ -1,0 +1,88 @@
+@import "../scss/settings/colors.scss";
+@import "../scss/settings/fonts.scss";
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    text-align: center;
+    padding: 20px;
+
+  h1 {
+    font-family: $font-base;
+    color: $color-font;
+    font-size: 33px;
+    font-weight: 300;
+  }
+
+  .decoration_img {
+    margin: 25px 0 40px 0;
+  }
+}
+
+.email_password {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 67px;
+  margin-bottom: 20px;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-font;
+    min-height: 77px;
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    input {
+      background-color: $primary-color;
+      border: none;
+      border-bottom: 1px solid $color-font;
+      width: 250px;
+      margin-top: 20px;
+      font-size: 14px;
+      font-family: $font-alt;
+      color: $color-font;
+      font-weight: 300;
+    }
+  }
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  width: 384px;
+
+  button {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    color: $color-font;
+    background-color: transparent;
+    border: 0.75px solid transparent;
+    padding: 13px 15px;
+    cursor: pointer;
+
+    &:hover {
+      border: 0.75px solid $color-font;
+    }
+  }
+
+  .second-btn {
+    border: 0.75px solid $color-font;
+
+    &:hover {
+      background-color: $color-login;
+      color: white;
+      box-shadow: 0 6px 15px 0 rgba(129, 133, 155, 0.74);
+    }
+  }
+}
