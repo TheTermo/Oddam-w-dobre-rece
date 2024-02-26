@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FormControl, InputLabel, Input, Button, Grid, Typography, Container } from '@mui/material';
 import decorationImg from '../../assets/Decoration.svg';
 import '../../scss/_Login.scss';
+import HomeHeader from "./HomeHeader";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ const Login = () => {
   };
 
   return (
-    <section className='login' id='login'>
+    <section className='login' id='login'>      <HomeHeader />
       <Container maxWidth="xs">
         <div className='login-container'>
           <h1>Zaloguj się</h1>
@@ -86,7 +87,7 @@ const Login = () => {
             </Grid>
             </div>
           <div className='login-buttons'>
-            <Link to='/register'>
+            <Link to='/registration'>
               <Button>Załóż konto</Button>
             </Link>
             <Button className='second-btn' type="submit" onClick={handleSubmit}>Zaloguj się</Button>
