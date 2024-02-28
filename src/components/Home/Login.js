@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FormControl, InputLabel, Input, Button, Grid, Typography, Container } from '@mui/material';
 import decorationImg from '../../assets/Decoration.svg';
 import '../../scss/_Login.scss';
-import HomeHeader from "./HomeHeader";
+import LoginHeader from "../Home/LoginHeader";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +48,7 @@ const Login = () => {
   };
 
   return (
-    <section className='login' id='login'>      <HomeHeader />
+    <section className='login' id='login'>      <LoginHeader />
       <Container maxWidth="xs">
         <div className='login-container'>
           <h1>Zaloguj się</h1>
